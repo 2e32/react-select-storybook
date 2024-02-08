@@ -1,0 +1,107 @@
+:root {
+  --white: #fff;
+  --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.searchable-select {
+  font-family: var(--font);
+}
+
+.searchable-select > .e-select__box {
+  border: 1px solid #e5e5ea;
+  border-radius: 4px;
+}
+
+.searchable-select > .e-select__box:hover {
+  border-color: #3498ff;
+}
+
+.searchable-select > .e-select__box:focus {
+  border-color: #3498ff;
+  outline: 3px solid rgba(52, 152, 255, 0.25) !important;
+}
+
+.searchable-select > .e-select__box > .e-select__value {
+  padding: 7px;
+}
+
+.searchable-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+}
+
+.searchable-menu__item {
+  display: block;
+  padding: 8px 12px;
+  color: #575757;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.searchable-menu__item:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.searchable-menu__item:not(.searchable-menu__item--disabled):hover {
+  cursor: pointer;
+}
+
+.searchable-menu__item:not(.searchable-menu__item--selected):not(
+    .searchable-menu__item--disabled
+  ):hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.searchable-menu__item--disabled {
+  color: rgba(87, 87, 87, 0.3);
+  cursor: default;
+  pointer-events: none;
+}
+
+.searchable-menu__item--disabled.searchable-menu__item--selected {
+  background-color: rgba(230, 244, 255, 0.6);
+}
+
+.searchable-menu__item--selected {
+  font-weight: 600;
+}
+
+.searchable-menu__item--selected:not(.searchable-menu__item--disabled) {
+  background-color: #e6f4ff;
+}
+
+.searchable-menu__item--selected:not(.searchable-menu__item--disabled):hover {
+  background-color: #dceffd;
+}
+
+.search-box {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.search-box__input {
+  max-width: 100%;
+  padding: 6px 36px 6px 12px;
+  color: #575757;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #fff;
+  border: 1px solid #e5e5ea;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.search-box__icon {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  fill: #e5e5ea;
+}
